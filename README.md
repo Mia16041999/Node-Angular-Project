@@ -57,6 +57,10 @@ ng serve
 ![node5](https://github.com/Mia16041999/Node-Angular-Project/assets/151848543/be31fb33-87d7-4985-b901-e5a61c1ec835)
 ![node6](https://github.com/Mia16041999/Node-Angular-Project/assets/151848543/e49800f3-3789-40fc-8bec-9eb2655ed790)
 ![node7](https://github.com/Mia16041999/Node-Angular-Project/assets/151848543/ab588fac-3c7d-430e-8ecd-902b7ef53411)
+![node8](https://github.com/Mia16041999/Node-Angular-Project/assets/151848543/8451ebf8-d277-4017-84dd-1e9b7e2951fb)
+![image](https://github.com/Mia16041999/Node-Angular-Project/assets/151848543/a4bcd125-563c-47e1-854b-fea82806b032)
+![image](https://github.com/Mia16041999/Node-Angular-Project/assets/151848543/a0289797-3f43-4ebf-8260-a89bd2c404ad)
+
 
 - Navbar Component:
  
