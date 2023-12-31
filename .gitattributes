@@ -1,1 +1,2 @@
-path/to/large/file(s) filter=lfs diff=lfs merge=lfs -text
+web-learning-app-main/frontend-angular/.angular/cache/15.2.9/angular-webpack/ee66815ca9c01fd557b91d4559c77849bdcfeb51/12.pack filter=lfs diff=lfs merge=lfs -text
+web-learning-app-main/frontend-angular/.angular/cache/15.2.9/angular-webpack/1937c8ee605fc91956bb27ad3c613e635e92426e/9.pack filter=lfs diff=lfs merge=lfs -text
