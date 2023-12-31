@@ -52,19 +52,27 @@ ng serve
 ## Screenshots
 
 - Home Component:
-![Home Component](link-to-image)
+ 
+![node4](https://github.com/Mia16041999/Node-Angular-Project/assets/151848543/1d922e42-94bf-4000-a612-35fa6868024f)
+![node5](https://github.com/Mia16041999/Node-Angular-Project/assets/151848543/be31fb33-87d7-4985-b901-e5a61c1ec835)
+![node6](https://github.com/Mia16041999/Node-Angular-Project/assets/151848543/e49800f3-3789-40fc-8bec-9eb2655ed790)
+![node7](https://github.com/Mia16041999/Node-Angular-Project/assets/151848543/ab588fac-3c7d-430e-8ecd-902b7ef53411)
 
 - Navbar Component:
-![Navbar Component](link-to-image)
+ 
+![node3](https://github.com/Mia16041999/Node-Angular-Project/assets/151848543/0b88c4e6-cdaa-42b6-aaab-f2b0dcaf9afb)
 
 - FlashCardForm Component:
-![FlashCardForm Component](link-to-image)
+
+![node2](https://github.com/Mia16041999/Node-Angular-Project/assets/151848543/e8cd180f-4e53-42e7-b14f-968dbd544355)
 
 - FlashCardList Component:
-![FlashCardList Component](link-to-image)
+ 
+![node 10](https://github.com/Mia16041999/Node-Angular-Project/assets/151848543/9cbd2d83-abe3-4958-bbd1-ac7fff048b4a)
 
 - FlashCard Edit:
-![FlashCard Edit](link-to-image)
+ ![node1](https://github.com/Mia16041999/Node-Angular-Project/assets/151848543/c11d342c-6582-4ee5-96a5-9ad1c43e967c)
+
 
 ## How to Contribute
 
