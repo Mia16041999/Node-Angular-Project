@@ -1,0 +1,10 @@
+# Angular cache
+.angular/cache/
+
+# Dependency directories
+node_modules/
+
+# Optional: other files and folders to ignore
+# dist/
+# .env
+# etc.
