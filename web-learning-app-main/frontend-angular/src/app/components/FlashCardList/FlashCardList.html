@@ -1,0 +1,25 @@
+<!-- FlashCardList Component -->
+<div class="flashcard-container">
+  <button (click)="navigateToAdd()" class="add-flashcard-btn">Add Flashcard</button>
+  <table>
+      <thead>
+          <tr>
+              <th>Title</th>
+              <th>Question</th>
+              <th>Answer</th>
+              <th>Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let card of flashcards">
+              <td>{{ card.title }}</td>
+              <td>{{ card.question }}</td>
+              <td>{{ card.answer }}</td>
+              <td>
+                  <button *ngIf="card.id !== undefined" (click)="navigateToEdit(card.id)" class="edit-button">Edit</button>
+                  <button *ngIf="card.id !== undefined" (click)="deleteFlashcard(card.id)" class="delete-button">Delete</button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</div>

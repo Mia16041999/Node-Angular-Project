@@ -1,0 +1,41 @@
+<!-- Form to create or edit flashcards -->
+<form (ngSubmit)="saveFlashcard()">
+    <div>
+        <label for="title">Title</label>
+        <input type="text" id="title" [(ngModel)]="flashcard.title" name="title">
+    </div>
+    <div>
+        <label for="question">Question</label>
+        <textarea id="question" [(ngModel)]="flashcard.question" name="question"></textarea>
+    </div>
+    <div>
+        <label for="answer">Answer</label>
+        <textarea id="answer" [(ngModel)]="flashcard.answer" name="answer"></textarea>
+    </div>
+    <button type="submit">{{ editMode ? 'Update' : 'Save' }} Flashcard</button>
+</form>
+
+<!-- Flashcards Table -->
+<div class="flashcard-table">
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Question</th>
+                <th>Answer</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let card of flashcards">
+                <td>{{ card.title }}</td>
+                <td>{{ card.question }}</td>
+                <td>{{ card.answer }}</td>
+                <td>
+                    <button *ngIf="card.id !== undefined" (click)="editFlashcard(card.id)" class="edit-button">Edit</button>
+                    <button *ngIf="card.id !== undefined" (click)="deleteFlashcard(card.id)" class="delete-button">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,273 @@
+<header class="container">
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark fixed-top border-bottom">
+    <div class="container-fluid">
+      <!-- Left Offcanvas Trigger -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvasLeft"
+        aria-controls="offCanvasLeft" aria-labelledby="offCanvasLeft">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="bi bi-list"></i>
+      </button>
+
+      <!-- Brand Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+        ESILV
+      </a>
+
+      <!-- Right Offcanvas Trigger -->
+      <a role="button" class="d-block link-body-emphasis text-decoration-none" data-bs-toggle="offcanvas"
+        data-bs-target="#offCanvasRight" aria-expanded="false">
+        <img src="assets/img/logo.png" alt="mdo" width="32" height="32" class="avatar rounded-circle">
+      </a>
+    </div>
+  </nav>
+</header>
+
+
+<!-- Left Offcanvas Menu -->
+<div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offCanvasLeft" aria-labelledby="offCanvasLeftLabel">
+
+  <div class="offcanvas-header text-white">
+    <a class="navbar-brand pl-4" href="#">
+      <img src="assets/img/logo.png" alt="Logo" width="32" height="32" class="logo d-inline-block align-text-top">
+    </a>
+    <a href="#" class="navbar-brand fw-bold">ESLILV</a>
+    <button type="button" class="close-btn rounded py-1 px-2" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="bi bi-x-lg"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body pt-0">
+    <!-- Nav Links -->
+    <ul class="nav flex-column border-top pt-2">
+      <!-- Home -->
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <i class="bi bi-house-door"></i>
+          <span class="ps-1">Home</span>
+        </a>
+      </li>
+
+      <!-- About Us -->
+      <li class="nav-item">
+        <a class="nav-link" href="#footer">
+          <i class="bi bi-info-circle"></i>
+          <span class="ps-1">About Us</span>
+        </a>
+      </li>
+        <!-- flashcards link -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/flashcards">
+            <i class="bi bi-list-ul"></i>
+            <span class="ps-1">View Flashcards</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/add-flashcard">
+            <i class="bi bi-plus-square"></i>
+            <span class="ps-1">Add Flashcard</span>
+          </a>
+        </li>
+
+      <!-- Programs -->
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePrograms" aria-expanded="false"
+          aria-controls="collapsePrograms" (click)="programExpanded = !programExpanded">
+          <i class="bi bi-box"></i>
+          <span class="px-1">Programs</span>
+          <i *ngIf="!programExpanded" class="bi bi-chevron-down"></i>
+          <i *ngIf="programExpanded" class="bi bi-chevron-up"></i>
+        </a>
+        <div class="collapse" id="collapsePrograms">
+          <ul class="nav flex-column ms-3">
+            <!-- Take score for user stories -->
+            <li class="nav-item">
+              <a class="nav-link" href="#bees4life">
+                <i class="bi bi-bug"></i>
+                <span class="ps-1">LLM for take score</span>
+              </a>
+            </li>
+
+            <!-- Gerkin test -->
+            <li class="nav-item">
+              <a class="nav-link" href="#pollination">
+                <i class="bi bi-flower2"></i>
+                <span class="ps-1">Gerkin test</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- Partners -->
+      <li class="nav-item">
+        <a class="nav-link" href="#brands">
+          <i class="bi bi-people"></i>
+          <span class="ps-1">Partners</span>
+        </a>
+      </li>
+
+      <!-- Resources -->
+      <li class="nav-item">
+        <a class="nav-link" role="button" data-bs-toggle="collapse" data-bs-target="#collapseResources"
+          aria-expanded="false" aria-controls="collapseResources" (click)="resourcesExpanded = !resourcesExpanded">
+          <i class="bi bi-book"></i>
+          <span class="px-1">Resources</span>
+          <i *ngIf="!resourcesExpanded" class="bi bi-chevron-down"></i>
+          <i *ngIf="resourcesExpanded" class="bi bi-chevron-up"></i>
+        </a>
+        <div class="collapse" id="collapseResources">
+          <ul class="nav flex-column ms-3">
+            <!-- Library -->
+            <li class="nav-item">
+              <a class="nav-link" role="button" data-bs-toggle="collapse" data-bs-target="#collapseLibrary"
+                aria-expanded="false" aria-controls="collapseLibrary" (click)="libraryExpanded = !libraryExpanded">
+                <i class="bi bi-journal-bookmark"></i>
+                <span class="px-1">Library</span>
+                <i *ngIf="!libraryExpanded" class="bi bi-chevron-down"></i>
+                <i *ngIf="libraryExpanded" class="bi bi-chevron-up"></i>
+              </a>
+              <div class="collapse" id="collapseLibrary">
+                <ul class="nav flex-column ms-3">
+                  <!-- Topics and Categories -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="bi bi-bookmark"></i>
+                      <span class="ps-1">Topics and Categories</span>
+                    </a>
+                  </li>
+
+                  <!-- Downloadable Documents -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="bi bi-file-earmark-arrow-down"></i>
+                      <span class="ps-1">Downloadable Documents</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Interactive Tools -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="bi bi-tools"></i>
+                <span class="ps-1">Interactive Tools</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="offcanvas-footer p-3">
+
+    <ul class="nav flex-column border-top pt-2 border-bottom">
+      <!-- contact -->
+      <li class="nav-item">
+        <a class="nav-link" href="#footer">
+          <i class="bi bi-envelope"></i>
+          <span class="ps-1">Contact Us</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#footer">
+          <i class="bi bi-chat-right"></i>
+          <span class="ps-1">Give Feedback</span>
+        </a>
+      </li>
+
+      <!-- Copyright -->
+      <li class="nav-item">
+        <p class="copyright px-3 pt-2 pb-3 mb-0 text-muted text-white-50">
+          <i class="bi bi-c-circle"></i> {{currentYear}} ESLILV
+        </p>
+      </li>
+    </ul>
+
+    <!-- Footer Links -->
+    <ul class="footer-links nav justify-content-evenly">
+      <li class="nav-item">
+        <a class="nav-link" href="#footer">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#blog">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Resources</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Terms</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Privacy</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Right Offcanvas Menu -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offCanvasRight" aria-labelledby="offcanvasRightLabel">
+
+  <div class="offcanvas-body bg-dark py-0">
+
+    <div class="offcanvas-header pb-0 pe-0 align-items-start border-bottom text-white">
+      <!-- Profile Section -->
+      <div class="d-flex align-items-center mb-3">
+        
+        <div>
+          <p class="m-0"><span class="invisible">@</span>User name</p>
+        </div>
+      </div>
+
+      <!-- Close Icon -->
+      <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+      <button type="button" class="close-btn text-reset rounded py-1 px-2" data-bs-dismiss="offcanvas"
+        aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <!-- Menu Items -->
+    <ul class="nav flex-column">
+      <!-- New Project -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-file-earmark-plus"></i> New Project
+        </a>
+      </li>
+
+      <!-- Your Projects -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-grid"></i> Your Projects
+        </a>
+      </li>
+
+      <!-- Bookmarks -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-bookmark-star"></i> Bookmarks
+        </a>
+      </li>
+
+      <!-- Settings -->
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-gear"></i> Settings
+        </a>
+      </li>
+    </ul>
+
+    <!-- Sign Out -->
+    <ul class="nav flex-column border-top">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-box-arrow-right"></i> Sign Out
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,95 @@
+.navbar-toggler {
+
+  // change the size of the toggler icon
+  i {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+
+  // change the border of the .navbar-toggler when in focus or hovered over
+  &:hover,
+  &:focus {
+    border: 1px solid aliceblue;
+  }
+
+  // change the color of the icon when the .navbar-toggler is in focus or hovered over
+  &:hover i,
+  &:focus i {
+    color: aliceblue;
+  }
+}
+
+
+.offcanvas {
+
+  .x {
+    opacity: 50%;
+
+    &:hover,
+    &:focus {
+      opacity: 100%;
+    }
+  }
+
+  .text-reset {
+    color: #ffffff;
+  }
+
+  .btn-close {
+    color: #ffffff;
+    opacity: 50%;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      opacity: 100%;
+    }
+  }
+
+  .border-top,
+  .border-bottom {
+    border-color: #f0f8ff1d !important;
+  }
+
+  .nav-link {
+    color: rgba(240, 248, 255, 0.95);
+
+    // change the background of the li item on hover
+    &:hover,
+    &:active {
+      background-color: #f0f8ff35;
+      -webkit-text-underline-offset: 0.25rem;
+      text-underline-offset: 0.25rem;
+    }
+  }
+}
+
+.close-btn {
+  background: #f0f8ff3f;
+  border: hidden;
+  opacity: 50%;
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    opacity: 100%;
+    transition: opacity 0.2s ease-in-out;
+  }
+}
+
+.footer-links {
+
+  .nav-link {
+    padding: 0 2px 0;
+    margin-top: 16px;
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+      // opacity: 75%;
+      text-decoration: underline;
+      -webkit-text-underline-offset: 0.25rem;
+      text-underline-offset: 0.25rem;
+    }
+  }
+}
